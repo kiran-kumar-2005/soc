@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar input {
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+        }
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .video-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .video-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .video-card p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">YouTube Clone</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for videos..." id="searchInput">
+        </div>
+    </header>
+
+    <div class="video-list">
+        <div class="video-card">
+            <img src="https://via.placeholder.com/400x250" alt="Video Thumbnail">
+            <h3>Sample Video Title</h3>
+            <p>Uploaded by User 1 | 100k views</p>
+        </div>
+        <div class="video-card">
+            <img src="https://via.placeholder.com/400x250" alt="Video Thumbnail">
+            <h3>Another Video Title</h3>
+            <p>Uploaded by User 2 | 200k views</p>
+        </div>
+        <div class="video-card">
+            <img src="https://via.placeholder.com/400x250" alt="Video Thumbnail">
+            <h3>Video Title 3</h3>
+            <p>Uploaded by User 3 | 300k views</p>
+        </div>
+    </div>
+
+</body>
+</html>
